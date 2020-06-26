@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Encoded url</title>
+</head>
+<body>
+<!--/*@thymesVar id="encodedUrl" type=""*/-->
+<h3>Encoded url:</h3>
+<p th:text="${encodedUrl}"> </p>
+
+<!--/*@thymesVar id="Url" type="Url"*/-->
+<!--<form action="#" th:action="@{/decode}" th:object="${Url}" method="GET">-->
+
+<form action="#" th:action="@{/decode}" method="GET">
+    Enter url to decode: <input type="text" name="longUrl"/><br>
+    <button name="submit" type="submit" value="0">Decode</button>
+</form>
+
+</body>
+</html>

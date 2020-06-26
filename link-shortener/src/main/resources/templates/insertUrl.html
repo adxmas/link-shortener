@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Insert url</title>
+</head>
+<body>
+Just insert the link<br/>
+<form action="#" th:action="@{/saveurl}" th:object="${Url}" method="GET">
+longUrl: <input type="text" name="longUrl" th:field="*{longUrl}"/><br>
+<button name="submit" type="submit" value="0">Submit</button>
+</form>
+
+
+
+</body>
+</html>

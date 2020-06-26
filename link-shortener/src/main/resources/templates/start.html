@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home page</title>
+</head>
+<body>
+<!--/*@thymesVar id="Url" type=""*/-->
+<h1>Home page</h1>
+Just insert the link<br/>
+<form action="#" th:action="@{/saveurl}" th:object="${Url}" method="GET">
+longUrl: <input type="text" name="longUrl" th:field="*{longUrl}"/><br>
+<button name="submit" type="submit" value="0">Submit</button>
+</form>
+</body>
+</html>
