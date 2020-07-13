@@ -1,2 +1,2 @@
 # link-shortener
-link shortener with springboot, jpa, rest
+link shortener with springboot, jpa
